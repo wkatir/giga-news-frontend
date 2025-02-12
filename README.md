@@ -1,50 +1,32 @@
-# React + TypeScript + Vite
+# Giga News
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción del Proyecto
+Giga News es una plataforma de noticias enfocada en tecnología que permite a los administradores publicar contenido actualizado y relevante para los usuarios. A diferencia de otros portales de noticias, este proyecto está diseñado con un enfoque de gestión de contenido centralizado, donde solo los administradores tienen permisos para crear, editar y eliminar publicaciones, mientras que los usuarios pueden acceder y visualizar la información sin restricciones.
 
-Currently, two official plugins are available:
+## Objetivo del Proyecto
+El objetivo principal de Giga News es desarrollar un sistema de noticias dinámico y seguro, aplicando principios de desarrollo web moderno y buenas prácticas en la arquitectura de software. Este proyecto servirá como una herramienta práctica para explorar la implementación de un sistema CRUD (Crear, Leer, Actualizar, Eliminar) con control de acceso basado en roles.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Funcionalidades Principales
+- **Administración de Noticias:** Los administradores pueden crear, actualizar y eliminar noticias desde un panel de control.
+- **Visualización de Contenido:** Los usuarios pueden explorar y leer las noticias sin necesidad de autenticación.
+- **Interfaz Responsiva:** Diseño moderno y adaptable para una experiencia óptima en dispositivos móviles y de escritorio.
 
-## Expanding the ESLint configuration
+## Tecnología Utilizada
+Este proyecto está desarrollado utilizando un stack tecnológico moderno en el frontend:
+- **React + Vite:** Para un desarrollo rápido y modular.
+- **TypeScript:** Para mayor robustez y escalabilidad.
+- **Tailwind CSS:** Para un diseño atractivo y eficiente.
+- **React Router:** Para gestionar la navegación entre páginas.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Justificación Académica
+Este proyecto forma parte de la materia **APLICACIÓN DE METODOLOGÍAS ÁGILES DE DESARROLLO DE SOFTWARE - GRUPO 01**, con el objetivo de aplicar metodologías ágiles en el desarrollo frontend de una aplicación real. A través de este sistema, se busca fortalecer la capacidad de estructurar proyectos modulares, optimizar la experiencia de usuario y mejorar la seguridad en el manejo de datos.
 
-- Configure the top-level `parserOptions` property like this:
+## Estado del Proyecto
+Actualmente, el proyecto se encuentra en fase de planificación y estructuración del frontend. En las próximas etapas se procederá con la implementación de los componentes, integración de rutas y diseño responsivo.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Contribución
+Este proyecto está abierto a mejoras y sugerencias. Si deseas colaborar, puedes hacerlo a través del sistema de gestión de versiones o proponiendo cambios en la documentación.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+---
+**Desarrollado por:** Wilmer Salazar
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```

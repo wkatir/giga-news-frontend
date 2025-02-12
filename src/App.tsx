@@ -1,12 +1,15 @@
-function App() {
+import Footer from "./components/shared/Footer";
+import Header from "./components/shared/Header";
+import Home from "./pages/Home";
 
+function App() {
   return (
     <>
-      <div className="bg-black p-3">
-        <h1 className="text-white">App</h1>
-      </div>
+      <Header></Header>
+      <Home></Home>
+      <Footer></Footer>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
