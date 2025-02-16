@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
-import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
 import { Checkbox } from '@/components/ui/checkbox'
 import { FcGoogle } from 'react-icons/fc'
 import { FaApple } from 'react-icons/fa'
+import { Button } from '@/components/ui/button'
 
 function Register() {
   return (
